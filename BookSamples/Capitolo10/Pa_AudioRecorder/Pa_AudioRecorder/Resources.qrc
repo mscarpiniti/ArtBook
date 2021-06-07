@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>play.png</file>
+        <file>record.png</file>
+        <file>stop.png</file>
+    </qresource>
+    <qresource prefix="/anims">
+        <file>recording.gif</file>
+    </qresource>
+</RCC>

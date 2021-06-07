@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>519</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>271</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Sinusoidale Sinistra</string>
+    </property>
+    <widget class="QDial" name="m_left_FreqDial">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>50</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>40</number>
+     </property>
+     <property name="maximum">
+      <number>20000</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Frequenze</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_left_FreqLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Livello</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="m_leftLevelDial">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>50</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_leftLevelLabel">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="m_leftEnable">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Attivo</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="m_leftFiltered">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filtrato</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>150</y>
+      <width>271</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Sinusoidale Destra</string>
+    </property>
+    <widget class="QDial" name="m_rightFreqDial">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>50</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>40</number>
+     </property>
+     <property name="maximum">
+      <number>20000</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Frequenza</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_rightFreqLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Livello</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="m_rightLevelDial">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>50</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_rightLevelLabel">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="m_rightEnable">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Attivo</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="m_rightFiltered">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filtrato</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Ingresso</string>
+    </property>
+    <widget class="QCheckBox" name="m_inputFiltered">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filtrato</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="m_inputActive">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Attivo</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="m_inputLevelDial">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>49</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>70</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Livello</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_inputLevelLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>120</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Filtro</string>
+    </property>
+    <widget class="QCheckBox" name="m_FilterEnable">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Attivo</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="m_filterGainDial">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>49</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>200</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>70</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Guadagno</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_filterGainLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="m_filterCutoffDial">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>49</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>40</number>
+     </property>
+     <property name="maximum">
+      <number>20000</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>70</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>F. Cutoff</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="m_FilterCutoffLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>..</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="m_start">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>280</y>
+      <width>131</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Avvia Streaming</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>519</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPa_RegaliaMitra">
+    <property name="title">
+     <string>Pa_RegaliaMitra</string>
+    </property>
+    <addaction name="actionChiudi"/>
+   </widget>
+   <addaction name="menuPa_RegaliaMitra"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionChiudi">
+   <property name="text">
+    <string>Chiudi</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
