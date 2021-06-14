@@ -23,6 +23,8 @@ La trattazione dei vari argomenti avviene in maniera graduale. Si parte dalle no
 9. Il MIDI
 10. Applicazioni
 
+**Appendici**
+
 A. La documentazione<br />
 B. Notazione binaria ed esadecimale<br />
 C. Concetti fondamentali del linguaggio C/C++<br />
