@@ -22,7 +22,8 @@ La trattazione dei vari argomenti avviene in maniera graduale. Si parte dalle no
 8. Gli effetti audio
 9. Il MIDI
 10. Applicazioni
-A\. La documentazione
+
+A. La documentazione
 B. Notazione binaria ed esadecimale
 C. Concetti fondamentali del linguaggio C/C++
 D. Interfacce grafiche con Qt
