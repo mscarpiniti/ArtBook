@@ -29,3 +29,8 @@ A. La documentazione<br />
 B. Notazione binaria ed esadecimale<br />
 C. Concetti fondamentali del linguaggio C/C++<br />
 D. Interfacce grafiche con Qt<br />
+
+
+### Uso degli esempi
+
+Il codice di tutti gli esempi riportati nel testo è presente nel repository. Gli esempi sono già configurati per tutti i sistemi perativi e pronti all'uso. Per maggiori dettagli si veda il seguente [README](BookSamples/README.md)
