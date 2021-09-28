@@ -1,6 +1,6 @@
 In questa cartella è possibile inserire i file di header e i file di libreria statica e/o dinamica da utilizzare nei progetti.
 
-Nello specifico, gli header delle diverse librerie possono essere scaricati dai seguenti link:
+Nello specifico, le diverse librerie possono essere scaricate dai seguenti link:
 
 1. PortAudio: https://github.com/PortAudio/portaudio
 2. PortMIDI: https://github.com/rbdannenberg/portmidi
